@@ -15,12 +15,6 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-"customizing colors
-set colorcolumn=80
-set background=dark
-colorscheme gruvbox
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-
 "general plugins
 call plug#begin('~/.vim/plugged')
 
@@ -33,6 +27,12 @@ Plug 'lyuts/vim-rtags'
 Plug 'mbbill/undotree'
 
 call plug#end()
+
+"customizing colors
+set colorcolumn=80
+set background=dark
+colorscheme gruvbox
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "ignore case when searching
 if executable('rg')
