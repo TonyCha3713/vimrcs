@@ -1,6 +1,6 @@
 syntax on
 
-''makes vim more like an IDE''
+"makes vim more like an IDE
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -15,13 +15,13 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-''customizing colors''
+"customizing colors
 set colorcolumn=80
 set background=dark
 colorscheme gruvbox
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-''general plugins''
+"general plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -34,7 +34,7 @@ Plug 'mbbill/undotree'
 
 call plug#end()
 
-''ignore case when searching''
+"ignore case when searching
 if executable('rg')
     let g:rg_derive_root='true'
 endif
